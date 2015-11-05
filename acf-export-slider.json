@@ -1,0 +1,76 @@
+[
+    {
+        "key": "group_5612e82eeac70",
+        "title": "Slick Carousel Slider",
+        "fields": [
+            {
+                "key": "field_5612e826d8458",
+                "label": "Carousel Slider",
+                "name": "slick_carousel_slider",
+                "type": "repeater",
+                "instructions": "Add at least three photos to this carousel slider. Click \"Add Slide\", add or upload a photo, and crop. The image will be cropped to 800 x 417 for lightbox (they will display at 280 x 146). Drag the left bar of the image to reorder. Click the \"+\" or \"-\" on the right to add or remove.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": "",
+                "max": "",
+                "layout": "table",
+                "button_label": "Add Slide",
+                "sub_fields": [
+                    {
+                        "key": "field_5612e869d8459",
+                        "label": "Image",
+                        "name": "image",
+                        "type": "image_crop",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "crop_type": "hard",
+                        "target_size": "custom",
+                        "width": 800,
+                        "height": 417,
+                        "preview_size": "medium",
+                        "force_crop": "yes",
+                        "save_in_media_library": "no",
+                        "retina_mode": "no",
+                        "save_format": "object",
+                        "library": "all"
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ],
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "default"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]
